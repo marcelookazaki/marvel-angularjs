@@ -1,0 +1,30 @@
+<html ng-app="app">
+    <head>
+        <title>Marvel</title>
+        <link rel="stylesheet" type="text/css" href="styles/app.css">
+        <script src="lib/angular.js"></script>
+        <script src="lib/angular-route.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/config/config.js"></script>
+        <script src="js/config/routeConfig.js"></script>
+        <script src="js/controllers/listController.js"></script>
+        <script src="js/controllers/detailsController.js"></script>
+        <script src="js/services/appService.js"></script>
+        <script src="js/directives/titleDirective.js"></script>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+        <!-- Bootstrap core JS-->
+       <script  src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body class="bg-light">
+        <div ng-include="'view/componets/header.html'"></div>
+        <div ng-view></div>
+    </body>
+</html>
